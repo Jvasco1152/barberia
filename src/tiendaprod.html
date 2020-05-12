@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/css/estilos.css">
+    <title>Tienda</title>
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col text-center mb-3">
+                <h1>TIENDA DE ALTA CALIDAD</h1>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container">
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <h2>Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>$</p>
+            </aside>
+        </div>
+    </div>    
+
+
+    <script src="/src/js/jquery-3.4.1.min.js"></script>
+    <script src="/src/js/popper.min.js"></script>
+    <script src="/src/js/bootstrap.min.js"></script>
+    <script src="/src/js/tiendapr.js"></script>
+</body>
+</html>
